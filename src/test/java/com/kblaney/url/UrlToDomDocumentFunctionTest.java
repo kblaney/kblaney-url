@@ -1,25 +1,24 @@
 package com.kblaney.url;
 
-import com.kblaney.url.JtidyUrlToDomDocumentFunction;
 import org.junit.Test;
 
-public final class JtidyUrlToDomDocumentFunctionTest
+public final class UrlToDomDocumentFunctionTest
 {
   @Test(expected = IllegalArgumentException.class)
   public void constructor_ZeroMaxNumDownloadAttempts()
   {
-    new JtidyUrlToDomDocumentFunction(0);
+    new UrlToDomDocumentFunction(0);
   }
 
   @Test(expected = IllegalArgumentException.class)
   public void constructor_NegativeMaxNumDownloadAttempts()
   {
-    new JtidyUrlToDomDocumentFunction(-1);
+    new UrlToDomDocumentFunction(-1);
   }
 
   @Test
   public void constructor_PositiveMaxNumDownloadAttempts()
   {
-    new JtidyUrlToDomDocumentFunction(2);
+    new UrlToDomDocumentFunction(2);
   }
 }
