@@ -1,4 +1,4 @@
-kblaney-xml
+kblaney-url
 ===========
 
-Kyle Blaney's XML libraries.
+Kyle Blaney's URL libraries.
