@@ -14,7 +14,7 @@ import org.w3c.tidy.Tidy;
  */
 public final class JtidyUrlToDomDocumentFunction implements UrlToDomDocumentFunction
 {
-  private final int maxNumAttempts;
+  private final int maxNumDownloadAttempts;
 
   /**
    * Constructs a new instance that attempts to download 10 times.
@@ -31,7 +31,7 @@ public final class JtidyUrlToDomDocumentFunction implements UrlToDomDocumentFunc
    */
   public JtidyUrlToDomDocumentFunction(final int maxNumDownloadAttempts)
   {
-    this.maxNumAttempts = ArgAssert.assertGreaterThan(maxNumDownloadAttempts, 0, "maxNumAttempts");
+    this.maxNumDownloadAttempts = ArgAssert.assertGreaterThan(maxNumDownloadAttempts, 0, "maxNumDownloadAttempts");
   }
 
   @Override
@@ -59,7 +59,7 @@ public final class JtidyUrlToDomDocumentFunction implements UrlToDomDocumentFunc
   {
     IOException ioException = null;
     int numAttempts = 0;
-    while (numAttempts < maxNumAttempts)
+    while (numAttempts < maxNumDownloadAttempts)
     {
       try
       {
