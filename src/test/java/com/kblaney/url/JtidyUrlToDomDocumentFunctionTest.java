@@ -1,5 +1,6 @@
-package com.kblaney.xml;
+package com.kblaney.url;
 
+import com.kblaney.url.JtidyUrlToDomDocumentFunction;
 import org.junit.Test;
 
 public final class JtidyUrlToDomDocumentFunctionTest
