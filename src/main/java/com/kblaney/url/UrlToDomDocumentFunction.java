@@ -14,6 +14,7 @@ import org.w3c.tidy.Tidy;
  */
 public final class UrlToDomDocumentFunction implements UrlFunction<Document>
 {
+  private static final int DEFAULT_MAX_NUM_DOWNLOAD_ATTEMPTS = 10;
   private final int maxNumDownloadAttempts;
 
   /**
@@ -21,7 +22,7 @@ public final class UrlToDomDocumentFunction implements UrlFunction<Document>
    */
   public UrlToDomDocumentFunction()
   {
-    this(/*maxNumDownloadAttempts=*/10);
+    this(DEFAULT_MAX_NUM_DOWNLOAD_ATTEMPTS);
   }
 
   /**
