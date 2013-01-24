@@ -6,9 +6,9 @@
    <artifactId>kblaney-url</artifactId>
    <version>0.1-SNAPSHOT</version>
    <packaging>jar</packaging>
-   <name>Kyle Blaney's XML Libraries</name>
-   <description>Kyle Blaney's XML Libraries</description>
-   <url>https://github.com/kblaney/kblaney-xml</url>
+   <name>Kyle Blaney's URL Libraries</name>
+   <description>Kyle Blaney's URL Libraries</description>
+   <url>https://github.com/kblaney/kblaney-url</url>
    <licenses>
       <license>
          <name>The Apache Software License, Version 2.0</name>
@@ -18,9 +18,9 @@
       </license>
    </licenses>
    <scm>
-      <connection>scm:git:git@github.com:kblaney/kblaney-xml.git</connection>
-      <developerConnection>scm:git:git@github.com:kblaney/kblaney-xml.git</developerConnection>
-      <url>scm:git:git@github.com:kblaney/kblaney-xml.git</url>
+      <connection>scm:git:git@github.com:kblaney/kblaney-url.git</connection>
+      <developerConnection>scm:git:git@github.com:kblaney/kblaney-url.git</developerConnection>
+      <url>scm:git:git@github.com:kblaney/kblaney-url.git</url>
    </scm>
    <developers>
       <developer>
